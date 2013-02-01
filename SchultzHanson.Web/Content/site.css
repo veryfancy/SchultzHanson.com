@@ -1,4 +1,4 @@
-body {
+﻿body {
   border-top: 3px solid #000000;
   color: #000000;
   font-family: sans-serif;
@@ -19,18 +19,23 @@ header h1 {
 }
 header h2 {
   float: right;
+  font-size: 1.6em;
+  line-height: 1.6;
   line-height: 3.2;
   margin-bottom: 0;
 }
-h2 {
+#main {
   font-size: 1.6em;
-  font-weight: bold;
   line-height: 1.6;
+}
+h2 {
+  font-weight: bold;
   margin-bottom: .8em;
 }
 p {
-  font-size: 1.6em;
-  line-height: 1.6;
+  margin-bottom: .8em;
+}
+ul {
   margin-bottom: .8em;
 }
 img {
