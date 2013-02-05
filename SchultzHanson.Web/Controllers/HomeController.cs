@@ -8,13 +8,17 @@ namespace SchultzHanson.Web.Controllers
 {
     public class HomeController : Controller
     {
-        //
-        // GET: /Home/
+        public ActionResult Index() { return View(); }
+        public ActionResult Directions() { return View(); }
+        public ActionResult WeddingParty() { return View(); }
+        public ActionResult Guestbook() { return View(); }
 
-        public ActionResult Index()
+        [HttpPost]
+        public ActionResult Guestbook(FormCollection formCollection)
         {
-            return View();
-        }
 
+
+            return RedirectToAction("Guestbook");
+        }
     }
 }

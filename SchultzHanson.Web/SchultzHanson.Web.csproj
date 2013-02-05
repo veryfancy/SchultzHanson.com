@@ -108,13 +108,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\GuestbookEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\images\allis-map.png" />
+    <Content Include="Content\images\bird-right.jpg" />
+    <Content Include="Content\images\bird-left.jpg" />
+    <Content Include="Content\images\home.png" />
+    <Content Include="Content\images\knick-map.png" />
     <Content Include="Content\images\photos\bench.jpg" />
+    <Content Include="Content\images\photos\invitation.jpg" />
+    <Content Include="Content\images\villa-terrace-map.png" />
     <Content Include="Content\reset.css">
       <DependentUpon>reset.less</DependentUpon>
     </Content>
@@ -207,10 +215,12 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-1.9.0.min.map" />
+    <Content Include="Views\Home\Directions.cshtml" />
+    <Content Include="Views\Home\WeddingParty.cshtml" />
+    <Content Include="Views\Home\Guestbook.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

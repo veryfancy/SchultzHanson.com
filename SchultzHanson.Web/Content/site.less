@@ -1,59 +1,157 @@
 ﻿
 @black: #000000;
-@green: #33cc00;
-@white: #FFFFF0;
+@darkgrey: #222222;
+@grey: #444444;
+@green: #ab4;
+@ivory: #ffe;
+@white: #fff;
 
 body {
-	border-top: 3px solid @black;
-	color: @black;
+	background: @ivory;
+	color: @grey;
 	font-family:sans-serif;
 	font-size: 62.5%;
+	line-height: 1.6;
 }
 
-    body > div {
-		margin: 0 auto;
-		max-width:960px;
-		padding:0 1em;
-    }
+h1, h2, h3, h4, h5, h6 {
+	color: @green;
+	font-family:serif;
+	text-transform: uppercase;
+	font-weight:normal;
+}
 
-header {
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+	font-size: 2.0em;
+	font-weight:bold;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+a {
+	color:@grey;
+}
+
+p, ul, label {
+	font-size: 1.4em;
+	text-transform: lowercase;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+.nav-wrapper {
+    background: @black;
+
+    .nav {
+        color: @white;
+        font-weight: bold;
+        line-height: 2.4;
+        margin: 0 auto;
+        max-width: 960px;
+        padding: 0 1em;
+
+        li {
+            display: inline-block;
+            margin-right: .3em;
+        }
+
+        a {
+            color: @white;
+            text-decoration: none;
+        }
+
+        li.home a {
+			background: url(images/home.png) no-repeat @black;
+			background-position: 4px 4px;
+			display:inline-block;
+			height:28px;
+			text-indent:-999em;
+			width:28px;
+        }
+    }
+}
+
+.header {
     text-align: right;
 
     h1 {
         float: left;
-        font-size: 3.2em;
-        line-height: 1.6;
+		line-height: 1.8;
     }
 
     h2 {
 		float: right;
-		font-size: 1.6em;
-		line-height: 1.6;
-        line-height: 3.2;
+		font-weight:normal;
+		font-size: 1.4em;
+        line-height: 3.4;
 		margin-bottom: 0;
     }
 }
 
 #main {
-	font-size: 1.6em;
-	line-height: 1.6;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 1em;
+
+    h2 {
+        margin-bottom: .2em;
+    }
+
+    p {
+        margin-bottom: .8em;
+    }
+
+    ul {
+        margin-bottom: .8em;
+    }
+
+    img {
+        border: solid 1px @grey;
+    }
+
+        img.wide {
+            max-width: 100%;
+            width: 100%;
+        }
+
+    .direction-section {
+		margin-bottom:1em;
+
+		.google-map {
+			float: left;
+			margin-right: 1em;
+		}
+
+		.direction-list {
+			float: left;
+		}
+    }
+
 }
 
-h2 {
-	font-weight: bold;
-	margin-bottom:.8em;
-}
 
-p {
-	margin-bottom:.8em;
+@media all and (min-width:380px) {
+    .header {
+        h1 {
+            background: url(images/bird-right.jpg) no-repeat transparent;
+            background-position: left 0;
+            padding-left: 52px;
+        }
+    }
 }
-
-ul {
-	margin-bottom:.8em;
-}
-
-img {
-	max-width:100%;
-	width:100%;
-}
-

@@ -12,21 +12,24 @@
     <script src="@Url.Content("~/Scripts/jquery-ui-1.9.0.min.js")"></script>
 </head>
 <body>
-    <div>
-        <header>
+    <div class="nav-wrapper">
+        <ul class="nav">
+            <li class="home"><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Directions", "Home")">Directions</a></li>
+            <li><a href="@Url.Action("WeddingParty", "Home")">Wedding Party</a></li>
+            <li><a href="@Url.Action("Guestbook", "Home")">Guestbook</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="header cf">
             <h1>Josh & Alicia</h1>
             <h2>April 20, 2013</h2>
-        </header>
-        <div id="main">
-            @RenderBody()
         </div>
+        @RenderBody()
     </div>
 
     <!-- TODO:
-        - Addresses for ceremony and reception
         - Maps/directions for ceremony and reception
-        - Hotel info
-        - Gift registry info
         - More photos ?
         - Guestbook sort of thing ?
     -->
