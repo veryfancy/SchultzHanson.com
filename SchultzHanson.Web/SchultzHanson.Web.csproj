@@ -116,8 +116,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\images\allis-map.png" />
-    <Content Include="Content\images\bird-right.jpg" />
-    <Content Include="Content\images\bird-left.jpg" />
+    <Content Include="Content\images\bird-right.png" />
     <Content Include="Content\images\home.png" />
     <Content Include="Content\images\knick-map.png" />
     <Content Include="Content\images\photos\bench.jpg" />
