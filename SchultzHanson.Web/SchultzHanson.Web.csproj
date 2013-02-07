@@ -117,7 +117,6 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\images\allis-map.png" />
     <Content Include="Content\images\bird-right.png" />
-    <Content Include="Content\images\home.png" />
     <Content Include="Content\images\knick-map.png" />
     <Content Include="Content\images\photos\bench.jpg" />
     <Content Include="Content\images\photos\invitation.jpg" />

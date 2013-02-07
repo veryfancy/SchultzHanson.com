@@ -69,14 +69,6 @@ label {
   color: #ffffff;
   text-decoration: none;
 }
-.nav-wrapper .nav li.home a {
-  background: url(images/home.png) no-repeat #000000;
-  background-position: 4px 4px;
-  display: inline-block;
-  height: 28px;
-  text-indent: -999em;
-  width: 28px;
-}
 .header {
   text-align: right;
 }
