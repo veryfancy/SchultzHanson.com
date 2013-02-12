@@ -115,18 +115,18 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\images\allis-map.png" />
     <Content Include="Content\images\bird-right.png" />
     <Content Include="Content\images\knick-map.png" />
     <Content Include="Content\images\photos\bench.jpg" />
     <Content Include="Content\images\photos\invitation.jpg" />
     <Content Include="Content\images\villa-terrace-map.png" />
-    <Content Include="Content\reset.css">
-      <DependentUpon>reset.less</DependentUpon>
-    </Content>
-    <Content Include="Content\reset.min.css">
-      <DependentUpon>reset.less</DependentUpon>
-    </Content>
     <Content Include="Content\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
@@ -231,9 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\site.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\reset.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

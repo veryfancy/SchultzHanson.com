@@ -1,28 +1,45 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Josh & Alicia | April 20, 2013</title>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" media="screen" href="~/Content/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" media="screen" href="~/Content/bootstrap/css/bootstrap-responsive.css" />
+
+    <link rel="stylesheet" media="screen" href="~/Content/site.css" />
+
+    <!--
     <link rel="stylesheet" href="@Url.Content("~/Content/reset.min.css")" />
     <link rel="stylesheet" href="@Url.Content("~/Content/site.min.css")" />
+    -->
 
-    <script src="@Url.Content("~/Scripts/jquery-1.8.2.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/jquery-ui-1.9.0.min.js")"></script>
 </head>
 <body>
-    <div class="nav-wrapper">
-        <ul class="nav">
-            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
-            <li><a href="@Url.Action("Directions", "Home")">Directions</a></li>
-            <li><a href="@Url.Action("WeddingParty", "Home")">Wedding Party</a></li>
-        </ul>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("Directions", "Home")">Directions</a></li>
+                        <li><a href="@Url.Action("WeddingParty", "Home")">Wedding Party</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="main">
-        <div class="header cf">
-            <h1>Josh & Alicia</h1>
-            <h2>April 20, 2013</h2>
+    <div class="container">
+        <div class="row-fluid">
+            <span class="icon-bird pull-left hidden-phone"></span>
+            <h1 class="pull-left">Josh & Alicia</h1>
+            <h4 class="pull-right"><span class="visible-phone">04/20/2013</span><span class="hidden-phone">April 20, 2013</span></h4>
         </div>
         @RenderBody()
     </div>
@@ -32,6 +49,10 @@
         - More photos ?
         - Guestbook sort of thing ?
     -->
+
+    <script src="@Url.Content("~/Scripts/jquery-1.9.0.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.9.0.min.js")"></script>
+    <script src="~/Content/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
