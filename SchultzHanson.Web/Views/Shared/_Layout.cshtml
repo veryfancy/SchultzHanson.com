@@ -9,12 +9,6 @@
     <link rel="stylesheet" media="screen" href="~/Content/bootstrap/css/bootstrap-responsive.css" />
 
     <link rel="stylesheet" media="screen" href="~/Content/site.css" />
-
-    <!--
-    <link rel="stylesheet" href="@Url.Content("~/Content/reset.min.css")" />
-    <link rel="stylesheet" href="@Url.Content("~/Content/site.min.css")" />
-    -->
-
 </head>
 <body>
     <div class="navbar navbar-inverse">
@@ -30,6 +24,7 @@
                         <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                         <li><a href="@Url.Action("Directions", "Home")">Directions</a></li>
                         <li><a href="@Url.Action("WeddingParty", "Home")">Wedding Party</a></li>
+                        <li><a href="https://docs.google.com/forms/d/1XcG7G6x_urXvulbB3a92dwkIfxfo3ZCANAocknEXPew/viewform">Guestbook</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,15 +39,8 @@
         @RenderBody()
     </div>
 
-    <!-- TODO:
-        - Maps/directions for ceremony and reception
-        - More photos ?
-        - Guestbook sort of thing ?
-    -->
-
     <script src="@Url.Content("~/Scripts/jquery-1.9.0.min.js")"></script>
     <script src="@Url.Content("~/Scripts/jquery-ui-1.9.0.min.js")"></script>
     <script src="~/Content/bootstrap/js/bootstrap.min.js"></script>
-
 </body>
 </html>
