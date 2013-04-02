@@ -125,15 +125,22 @@
     <Content Include="Content\images\bird-right.png" />
     <Content Include="Content\images\knick-map.png" />
     <Content Include="Content\images\photos\bench.jpg" />
+    <Content Include="Content\images\photos\eric.jpg" />
+    <Content Include="Content\images\photos\hillary.jpg" />
     <Content Include="Content\images\photos\invitation.jpg" />
+    <Content Include="Content\images\photos\jody.jpg" />
+    <Content Include="Content\images\photos\kevin.jpg" />
+    <Content Include="Content\images\photos\molly.jpg" />
+    <Content Include="Content\images\photos\quinn.jpg" />
+    <Content Include="Content\images\photos\rick.jpg" />
+    <Content Include="Content\images\photos\robin.jpg" />
+    <Content Include="Content\images\photos\rochelle.jpg" />
+    <Content Include="Content\images\photos\tony.jpg" />
     <Content Include="Content\images\villa-terrace-map.png" />
     <Content Include="Content\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
     <Content Include="Content\site.min.css">
-      <DependentUpon>site.less</DependentUpon>
-    </Content>
-    <Content Include="Content\style1.min.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
